@@ -18,9 +18,11 @@ export default function ResponsiveCarousel({ images }: ResponsiveCarouselProps) 
 
     useEffect(() => {
         function updateInnerWidth() {
-            const sw = carousel.current?.scrollWidth;
-            const ow = carousel.current?.offsetWidth;
-            setWidth(sw - ow);
+            if (carousel.current) {
+                const sw = carousel.current.scrollWidth;
+                const ow = carousel.current.offsetWidth;
+                setWidth(sw - ow);
+            }
         }
         updateInnerWidth();
         window.addEventListener('resize', updateInnerWidth);
