@@ -1,0 +1,28 @@
+
+.header{
+    display: flex;
+    width: 100%;
+    max-width: 82.5em;
+    height: 15em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 2em;
+  }
+  
+  .divLogo{
+    position: relative;
+    width: 100%;
+    max-width: 9.375em;
+    height: 100%;
+  }
+
+@media (max-width: 425px){
+  .header{
+    padding: 0em 1em;
+  }
+  
+  .divLogo{
+    max-width: 6.375em;
+  }
+  
+}
