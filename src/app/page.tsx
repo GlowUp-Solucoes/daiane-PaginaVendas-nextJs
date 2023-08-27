@@ -14,13 +14,13 @@ import Image1 from '../media/socialproof/1.png';
 import Image2 from '../media/socialproof/2.png';
 import Image3 from '../media/socialproof/3.png';
 import Image4 from '../media/socialproof/4.png';
-const images = [Image1, Image2, Image3, Image4];
+const images = [Image1.src, Image2.src, Image3.src, Image4.src];
 
 import E1 from '../media/examples/1.jpg'
 import E2 from '../media/examples/4.jpg'
 import E3 from '../media/examples/7.jpg'
 import E4 from '../media/examples/8.jpg'
-const examples = [E1, E2, E3, E4];
+const examples = [E1.src, E2.src, E3.src, E4.src];
 
 interface QAPair {
   question: string;
