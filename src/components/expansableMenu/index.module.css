@@ -1,0 +1,62 @@
+.expansableMenu{
+    width: 40em;
+    margin-bottom: 10px;
+}
+
+.header{
+    width: 40em;
+    min-height: 3em;
+    background-color: #D1B37A;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    padding: 0em 1em;
+    gap: 1em;
+    border-radius: 0.2em;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.expanded .header {
+    background-color: #C7A161;
+}
+
+.answer{
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    padding: 1em 2em;
+}
+
+.answerExpanded {
+    max-height: 20em; /* Valor grande o suficiente para a resposta */
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.below-header {
+    transition: margin-top 0.5s ease;
+}
+  
+  .expanded .below-header {
+    margin-top: 10px; /* Ajuste o valor conforme necessário */
+}
+
+@media (max-width: 425px){
+    .expansableMenu{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0em 1em;
+    }
+    
+    .header{
+        width: 100%;
+        font-size: clamp(0.6em, 0.7em + 1vw, 0.8em);
+        font-weight: 500;
+    }
+
+    .answer{
+        font-size: clamp(0.6em, 0.7em + 1vw, 0.8em);
+    }
+}  

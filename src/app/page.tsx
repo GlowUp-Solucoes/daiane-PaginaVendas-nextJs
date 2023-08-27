@@ -4,7 +4,11 @@ import Header from '../components/header'
 import Mockup from '../media/img/book1.png'
 import Mockup2 from '../media/img/Mockup2.jpg'
 import Daiane from '../media/img/Daiane.jpeg'
+import Email from '../media/img/Email.svg'
+import Wpp from '../media/img/Wpp.svg'
 import ResponsiveCarousel from '@/components/carousel'
+import ExpansableMenu from '@/components/expansableMenu'
+import styled from'@/components/expansableMenu/index.module.css'
 
 import Image1 from '../media/socialproof/1.png';
 import Image2 from '../media/socialproof/2.png';
@@ -18,14 +22,35 @@ import E3 from '../media/examples/7.jpg'
 import E4 from '../media/examples/8.jpg'
 const examples = [E1, E2, E3, E4];
 
+interface QAPair {
+  question: string;
+  answer: string;
+}
+
+const questionsAndAnswers: QAPair[] = [
+  {
+    question: 'Vou receber algum produto físico na minha casa?',
+    answer: 'Não. Todo o conteúdo do treinamento é 100% online. Assim que realizar a sua inscrição, você receberá seu Livro Digital e agendaremos nossa consultoria para tirar suas dúvidas.',
+  },
+  {
+    question: 'Quais são os métodos de pagamento?',
+    answer: 'Você pode pagar via cartão de crédito e parcelar em até 8x. Caso opte por realizar o pagamento à vista, pode fazer via PIX ou Boleto. Ao realizar o pagamento via cartão de crédito e PIX você recebe o acesso ao Livro imediatamente. Ao realizar via boleto, você recebe o acesso assim que o boleto for compensado, o que acontece, geralmente de 1 a 3 dias úteis após o pagamento.',
+  },
+  {
+    question: 'Terei suporte?',
+    answer: 'Sim. Você terá acesso ao WhatsApp da mentora.',
+  },
+  {
+    question: 'Como irá funcionar a consultoria?',
+    answer: 'A consultoria de 30 minutos em lash lifting é uma oportunidade exclusiva de receber orientações personalizadas e tirar suas dúvidas com a mentora. Durante a sessão, discutiremos suas necessidades específicas, analisaremos seus desafios e forneceremos soluções práticas e eficazes para aprimorar suas habilidades. Para fazer o agendamento da consultoria, procure o suporte!',
+  },
+];
 
 
 export default function Home() {
   return (
     <main className={styles.main}>
-
       <Header/>
-
       <div className={styles.container1}>
         <div className={styles.divImg}>
           <Image
@@ -55,7 +80,7 @@ export default function Home() {
       <div className={styles.container3}>
         <h3>Acesso Vitalício! <p>Você terá direito a todas as atualizações sem investir nada a mais por isso!</p></h3>
         <div className={styles.separator}></div>
-        <p>Já imaginou dominar o Lash Lifting com confiança?</p>
+        <p className={styles.subtitle}>Já imaginou dominar o Lash Lifting com confiança?</p>
         <span>Se você é iniciante e não possui experiência na técnica ou se você já fez cursos mas não está satisfeita com seus resultados, esse livro vai desbloquear todo seu potencial!</span>
         <ResponsiveCarousel images={examples}/>
         <a href='#' className={styles.Link}>COMPRE AGORA</a>
@@ -114,39 +139,37 @@ export default function Home() {
       <div className={styles.container7}>
         <p>Dúvidas Frequentes</p>
         <div>
-          <p>Vou receber algum produto físico na minha casa?</p>
-          <span>Não. Todo o conteúdo do treinamento é 100% online. Assim que realizar a sua inscrição, você receberá seu Livro Digital e agendaremos nossa consultoria para tirar suas dúvidas.</span>
-          <p>Quais são os métodos de pagamento?</p>
-          <span>Você pode pagar via cartão de crédito e parcelar em até 8x. Caso opte por realizar o pagamento à vista, pode fazer via PIX ou Boleto. Ao realizar o pagamento via cartão de crédito e PIX você recebe o acesso ao Livro imediatamente. Ao realizar via boleto, você recebe o acesso assim que o boleto for compensado, o que acontece, geralmente de 1 a 3 dias úteis após o pagamento.</span>
-          <p>Terei suporte?</p>
-          <span>Sim. Você terá acesso ao WhatsApp da mentora.</span>
-          <p>Como irá funcionar a consultoria?</p>
-          <span>A consultoria de 30 minutos em lash lifting é uma oportunidade exclusiva de receber orientações personalizadas e tirar suas dúvidas com a mentora. Durante a sessão, discutiremos suas necessidades específicas, analisaremos seus desafios e forneceremos soluções práticas e eficazes para aprimorar suas habilidades. Para fazer o agendamento da consultoria, procure o suporte!</span>
+          {questionsAndAnswers.map((qa, index) => (
+            <div key={index} className={styled.belowHeader}>
+              <ExpansableMenu question={qa.question} answer={qa.answer}/>
+            </div>
+          ))}
         </div>
+        <a href='#' className={styles.Link}>COMPRE AGORA</a>
       </div>
 
       <footer className={styles.footer}>
-        <div>
+        <div className={styles.fe}>
           <p>Daiane Heringer © Todos Direitos Reservados</p>
           <p>Cnpj: 45.377.255/0001-06</p>
-          <div>
-            {/* <Image
-              src={Logo}
+          <div className={styles.email}>
+            <Image
+              src={Email}
               alt='Email'
-              fill
-              sizes='(max-width: 66px) 100vw, 60px'
+              width={20}
+              height={20}
               priority
-            /> */}
+            />
             <p>contato@daianeheringer.com.br</p>
           </div>
-          <div>
-            {/* <Image
-              src={Logo}
+          <div className={styles.email}>
+            <Image
+              src={Wpp}
               alt='WhatsApp'
-              fill
-              sizes='(max-width: 66px) 100vw, 60px'
+              width={20}
+              height={20}
               priority
-            /> */}
+            />
             <p>(33)9-8400-6955</p>
           </div>
         </div>
