@@ -320,7 +320,7 @@
   
 }
 
-@media (max-width: 425px){
+@media (max-width: 600px){
   .container1{
     flex-direction: column;
     height: 50em;
