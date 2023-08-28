@@ -65,7 +65,7 @@ export default function Home() {
         <div className={styles.divText}>
           <h1>DESVENDANDO O SEGREDO: DOMINE O LASH LIFTING PARA RESULTADOS NATURAIS E LUCRATIVOS!</h1>
           <p>TRANSFORME OLHARES COM FACILIDADE! DESCUBRA AS TÉCNICAS EXCLUSIVAS DO LASH LIFTING PRO PARA CÍLIOS NATURALMENTE IRRESISTÍVEIS E LUCRATIVOS. ADQUIRA AGORA EM UMA OFERTA ESPECIAL POR TEMPO LIMITADO</p>
-          <a href='#' className={styles.Link}>COMPRE AGORA</a>
+          <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link}>COMPRE AGORA</a>
           <span>De <span className={styles.price}>R$97,00</span> por apenas <span className={styles.priceDiscount}>R$37,00</span> ou 8x de R$5,27</span>
         </div>
       </div>
@@ -74,7 +74,7 @@ export default function Home() {
         <h2>Leitores amaram este livro!</h2>
         <ResponsiveCarousel images={images}/>
         <span>Experimente você também</span>
-        <a href='#' className={styles.Link}>COMPRE AGORA</a>
+        <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link}>COMPRE AGORA</a>
       </div>
 
       <div className={styles.container3}>
@@ -83,7 +83,7 @@ export default function Home() {
         <p className={styles.subtitle}>Já imaginou dominar o Lash Lifting com confiança?</p>
         <span>Se você é iniciante e não possui experiência na técnica ou se você já fez cursos mas não está satisfeita com seus resultados, esse livro vai desbloquear todo seu potencial!</span>
         <ResponsiveCarousel images={examples}/>
-        <a href='#' className={styles.Link}>COMPRE AGORA</a>
+        <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link}>COMPRE AGORA</a>
       </div>
 
       <div className={styles.container4}>
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <a href='#' className={styles.Link}>COMPRE AGORA</a>
+        <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link}>COMPRE AGORA</a>
       </div>
 
       <footer className={styles.footer}>
@@ -174,7 +174,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <p>Desenvolvido por GlowUp!</p>
+          <p>Desenvolvido por <a href="https://www.instagram.com/danielsheringer/"></a>GlowUp!</p>
         </div>
       </footer>
     </main>
