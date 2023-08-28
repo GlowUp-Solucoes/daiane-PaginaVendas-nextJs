@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './index.module.css'
-import Logo from '../../media/logo/logo.svg'
+import Logo from '../../media/logo/image424.png'
 
 
 export default function Header() {
