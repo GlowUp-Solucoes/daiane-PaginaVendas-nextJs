@@ -1,12 +1,14 @@
 
 .header{
     display: flex;
-    width: 100%;
-    max-width: 82.5em;
-    height: 15em;
+    width: 100vw;
+    max-width: 100vw;
+    height: 10em;
     align-items: center;
     justify-content: space-between;
-    padding: 0em 2em;
+    padding: 0em 20em;
+    margin-bottom: 1em;
+    border-bottom: solid #D1B37A 0.2em;
   }
   
   .divLogo{
@@ -17,13 +19,26 @@
     max-height: 8.4em;
   }
 
-@media (max-width: 425px){
+@media (max-width: 1440px){
   .header{
-    padding: 0em 1em;
+    padding: 0em 5em;
   }
   
   .divLogo{
     max-width: 5em;
+    max-height: 5em;
+  }
+  
+}
+
+@media (max-width: 425px){
+  .header{
+    padding: 0em 2em;
+  }
+  
+  .divLogo{
+    max-width: 5em;
+    max-height: 5em;
   }
   
 }
