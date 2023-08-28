@@ -176,7 +176,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <a href="https://www.instagram.com/danielsheringer/">Desenvolvido por GlowUp!</a>
+          <a className={styles.glowup} href="https://www.instagram.com/danielsheringer/">Desenvolvido por GlowUp!</a>
         </div>
       </footer>
     </main>
