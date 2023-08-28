@@ -1,7 +1,6 @@
 {
   "name": "daianeheringer",
   "version": "0.1.0",
-  "homepage": "daianeheringer/",
   "private": true,
   "scripts": {
     "dev": "next dev",
