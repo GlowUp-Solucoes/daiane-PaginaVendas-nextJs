@@ -66,7 +66,7 @@ export default function Home() {
           <div className={styles.divText}>
             <h1>DESVENDANDO O SEGREDO: DOMINE O LASH LIFTING PARA RESULTADOS NATURAIS E LUCRATIVOS!</h1>
             <p>TRANSFORME OLHARES COM FACILIDADE! DESCUBRA AS TÉCNICAS EXCLUSIVAS DO LASH LIFTING PRO PARA CÍLIOS NATURALMENTE IRRESISTÍVEIS E LUCRATIVOS. ADQUIRA AGORA EM UMA OFERTA ESPECIAL POR TEMPO LIMITADO</p>
-            <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link}>COMPRE AGORA</a>
+            <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link} target="_blank">COMPRE AGORA</a>
             <span>De <span className={styles.price}>R$97,00</span> por apenas <span className={styles.priceDiscount}>R$37,00</span> ou 8x de R$5,27</span>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function Home() {
           <h2>Leitores amaram este livro!</h2>
           <ResponsiveCarousel images={images}/>
           <span>Experimente você também</span>
-          <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link}>COMPRE AGORA</a>
+          <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link} target="_blank">COMPRE AGORA</a>
         </div>
 
         <div className={styles.container3}>
@@ -84,7 +84,7 @@ export default function Home() {
           <p className={styles.subtitle}>Já imaginou dominar o Lash Lifting com confiança?</p>
           <span>Se você é iniciante e não possui experiência na técnica ou se você já fez cursos mas não está satisfeita com seus resultados, esse livro vai desbloquear todo seu potencial!</span>
           <ResponsiveCarousel images={examples}/>
-          <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link}>COMPRE AGORA</a>
+          <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link} target="_blank">COMPRE AGORA</a>
         </div>
 
         <div className={styles.container4}>
@@ -131,7 +131,7 @@ export default function Home() {
               <p>Sou apaixonada pela área da beleza e trabalho nesse ramo há 12 anos. Hoje possuo minha clínica e sou professora e mentora de diversas profissionais.</p>
               <p>Me tornei referência em entregar resultados com naturalidade pois sempre acreditei que o mais importante é ressaltar a beleza sem perder a essência e autenticidade de cada pessoa.</p>
               <p>Minha maior missão agora é ajudar VOCÊ a conquistar o sucesso nessa profissão. Vamos juntas nessa jornada!</p>
-              <p className={styles.insta}>@daiane.heringer</p>
+              <a href='https://www.instagram.com/daiane.heringer/' className={styles.insta} target='_blank'>@daiane.heringer</a>
             </div>
           </div>
 
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link}>COMPRE AGORA</a>
+          <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link} target="_blank">COMPRE AGORA</a>
         </div>
 
         <footer className={styles.footer}>
@@ -171,11 +171,11 @@ export default function Home() {
                 height={20}
                 priority
               />
-              <p>(33)9-8400-6955</p>
+              <a href='https://wa.me/message/P7HKDWI45BIPM1' target="_blank">(33)9-8400-6955</a>
             </div>
           </div>
           <div>
-            <a className={styles.glowup} href="https://www.instagram.com/danielsheringer/">Desenvolvido por GlowUp!</a>
+            <a className={styles.glowup} href="https://www.instagram.com/danielsheringer/" target="_blank">Desenvolvido por GlowUp!</a>
           </div>
         </footer>
       </main>
