@@ -10,6 +10,8 @@ import ResponsiveCarousel from '@/components/carousel'
 import ExpansableMenu from '@/components/expansableMenu'
 import styled from'@/components/expansableMenu/index.module.css'
 
+import Head from 'next/head'
+
 import Image1 from '../media/socialproof/1.png';
 import Image2 from '../media/socialproof/2.png';
 import Image3 from '../media/socialproof/3.png';
@@ -174,7 +176,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <p>Desenvolvido por <a href="https://www.instagram.com/danielsheringer/"></a>GlowUp!</p>
+          <a href="https://www.instagram.com/danielsheringer/">Desenvolvido por GlowUp!</a>
         </div>
       </footer>
     </main>
