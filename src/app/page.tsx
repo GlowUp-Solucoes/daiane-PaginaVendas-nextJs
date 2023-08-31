@@ -65,7 +65,7 @@ export default function Home() {
           </div>
           <div className={styles.divText}>
             <h1>DESVENDANDO O SEGREDO: DOMINE O LASH LIFTING PARA RESULTADOS NATURAIS E LUCRATIVOS!</h1>
-            <p>TRANSFORME OLHARES COM FACILIDADE! DESCUBRA AS TÉCNICAS EXCLUSIVAS DO LASH LIFTING PRO PARA CÍLIOS NATURALMENTE IRRESISTÍVEIS E LUCRATIVOS. ADQUIRA AGORA EM UMA OFERTA ESPECIAL POR TEMPO LIMITADO</p>
+            <p>Transforme olhares com facilidade! Esse livro vai te ajudar a ter resultados perfeitos em qualquer tipo de cílios, seguindo um passo a passo simples e descomplicado. Adquira agora em uma oferta especial!</p>
             <a href='https://pay.kiwify.com.br/Xk2AshM' className={styles.Link} target="_blank">COMPRE AGORA</a>
             <span>De <span className={styles.price}>R$97,00</span> por apenas <span className={styles.priceDiscount}>R$37,00</span> ou 8x de R$5,27</span>
           </div>
