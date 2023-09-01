@@ -1,4 +1,4 @@
-import FacebookPixel from '@/components/FacebookPixel/FacebookPixel'
+import FacebookPixel from '../components/FacebookPixel/FacebookPixel'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
