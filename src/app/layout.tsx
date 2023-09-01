@@ -1,4 +1,4 @@
-import FacebookPixel from '@/components/FacebookPixel/FacebookPixel'
+
 import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="PT-BR">
       <body className={poppins.className}>
         {children}
-        <FacebookPixel />
+
       </body>
     </html>
   )
