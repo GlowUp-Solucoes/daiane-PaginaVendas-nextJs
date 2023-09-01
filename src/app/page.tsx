@@ -9,6 +9,7 @@ import Wpp from '../media/img/Wpp.svg'
 import ResponsiveCarousel from '@/components/carousel'
 import ExpansableMenu from '@/components/expansableMenu'
 import styled from'@/components/expansableMenu/index.module.css'
+import Head from 'next/head'
 
 import Image1 from '../media/socialproof/1.png';
 import Image2 from '../media/socialproof/2.png';
@@ -50,6 +51,13 @@ const questionsAndAnswers: QAPair[] = [
 export default function Home() {
   return (
     <>
+      <Head>
+        <noscript>
+          <img height="1" width="1" 
+          src="https://www.facebook.com/tr?id=961240518486621&ev=PageView
+          &noscript=1"/>
+        </noscript>
+      </Head>
       <main className={styles.main}>
         <Header/>
         <div className={styles.container1}>
