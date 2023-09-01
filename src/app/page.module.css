@@ -169,7 +169,7 @@
 
 .container4 ul li{
   display: flex;
-  width: 40em;
+  width: 65em;
   height: 2.5em;
   background-color: var(--background-color);
   list-style: none;
@@ -407,7 +407,7 @@
     height: 5em;
     padding: 1em;
     text-align: left;
-    font-size: clamp(0.6em, 0.6em + 1vw, 0.8em);
+    font-size: clamp(0.6em, 0.6em + 1vw, 0.7em);
   }
 
   .container5{
