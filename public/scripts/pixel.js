@@ -1,6 +1,4 @@
-const PIXEL_ID = document.currentScript.getAttribute('data-pixel-id')
-
-function initializeFacebookPixel(f, b, e, v, n, t, s) {
+export default function initializeFacebookPixel(f, b, e, v, n, t, s) {
   if (f.fbq) return
   n = f.fbq = function () {
     n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
@@ -24,4 +22,4 @@ initializeFacebookPixel(
   'https://connect.facebook.net/en_US/fbevents.js'
 )
 
-window.fbq('init', PIXEL_ID)
+window.fbq('init', 961240518486621)

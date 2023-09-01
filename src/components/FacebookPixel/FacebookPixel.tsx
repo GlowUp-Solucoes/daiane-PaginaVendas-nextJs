@@ -3,7 +3,9 @@
 import { usePathname } from 'next/navigation'
 import Script from 'next/script'
 import { useEffect, useState } from 'react'
-import * as pixel from '../../lib/fpixel'
+import * as pixel from '../../lib/fpixel.js'
+
+
 
 
 const FacebookPixel = () => {
@@ -20,10 +22,10 @@ const FacebookPixel = () => {
     <div>
       <Script
         id="fb-pixel"
-        src='../../public/scripts/pixel.js'
+        src={'../../../public/scripts/pixel.js'}
         strategy="afterInteractive"
         onLoad={() => setLoaded(true)}
-        data-pixel-id={pixel.FB_PIXEL_ID}
+        data-pixel-id={961240518486621}
       />
     </div>
   )
