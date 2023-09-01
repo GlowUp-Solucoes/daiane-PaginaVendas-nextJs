@@ -9,7 +9,6 @@ import Wpp from '../media/img/Wpp.svg'
 import ResponsiveCarousel from '@/components/carousel'
 import ExpansableMenu from '@/components/expansableMenu'
 import styled from'@/components/expansableMenu/index.module.css'
-import Head from 'next/head'
 
 import Image1 from '../media/socialproof/1.png';
 import Image2 from '../media/socialproof/2.png';
@@ -51,25 +50,6 @@ const questionsAndAnswers: QAPair[] = [
 export default function Home() {
   return (
     <>
-      <Head>
-        <script>
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window,document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '961240518486621'); 
-          fbq('track', 'PageView');
-        </script>
-        <noscript>
-            <img height="1" width="1" 
-            src="https://www.facebook.com/tr?id=961240518486621&ev=PageView
-            &noscript=1"/>
-        </noscript>
-      </Head>
       <main className={styles.main}>
         <Header/>
         <div className={styles.container1}>
