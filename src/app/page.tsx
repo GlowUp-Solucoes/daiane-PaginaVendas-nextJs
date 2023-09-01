@@ -91,10 +91,10 @@ export default function Home() {
           <h4>O que você irá aprender</h4>
           <div className={styles.inner}>        
             <ul>
-              <li>O segredo por trás do Lash Lifting</li>
-              <li>A Tricologia dos cílios</li>
-              <li>Identifique e repare diferentes tipos de danos</li>
-              <li>Siga um passo a passo detalhado para um Lash Lifting impecável</li>
+              <li>Didática simples e prática</li>
+              <li>Informações que vão transformar seus resultados </li>
+              <li>Passo a passo ilustrado e facilitado</li>
+              <li>União das técnicas russa e brasileira para garantir que você tenha resultados excelentes em qualquer tipo de cílios</li>
               <li>E muito mais...</li>
             </ul>
             <div className={styles.divImg}>
